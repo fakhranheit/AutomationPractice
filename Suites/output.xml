@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20221013 21:02:19.883" rpa="false" schemaversion="3">
+<suite id="s1" name="6.contactUsFill" source="C:\Users\fakhran\Desktop\Robot\AutomationPractice\Suites\6.contactUsFill.robot">
+<test id="s1-t1" name="User bisa mengakses Contact Us" line="6">
+<kw name="Buka Browser" library="Test_keywords">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${CHROME_BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221013 21:02:20.061" level="INFO">Opening browser 'googlechrome' to base url 'http://automationpractice.com/index.php'.</msg>
+<status status="PASS" starttime="20221013 21:02:20.061" endtime="20221013 21:02:41.031"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221013 21:02:41.031" endtime="20221013 21:02:41.144"/>
+</kw>
+<status status="PASS" starttime="20221013 21:02:20.061" endtime="20221013 21:02:41.144"/>
+</kw>
+<kw name="User Klik Contact Us" library="Test_keywords">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contactUs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221013 21:02:41.145" level="INFO">Clicking element '//*[@id="contact-link"]/a'.</msg>
+<status status="PASS" starttime="20221013 21:02:41.145" endtime="20221013 21:02:54.170"/>
+</kw>
+<status status="PASS" starttime="20221013 21:02:41.145" endtime="20221013 21:02:54.170"/>
+</kw>
+<status status="PASS" starttime="20221013 21:02:20.060" endtime="20221013 21:02:54.171"/>
+</test>
+<test id="s1-t2" name="User berhasil mengisi Form Contact Us" line="11">
+<kw name="User Mengisi Form Contact Us" library="Test_keywords">
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>${subjectHeading}</arg>
+<arg>2</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20221013 21:02:54.172" level="INFO">Selecting options from selection list '//*[@id="id_contact"]' by index 2.</msg>
+<status status="PASS" starttime="20221013 21:02:54.172" endtime="20221013 21:02:54.236"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fieldEmailContact}</arg>
+<arg>text=fakhranwahyuf@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221013 21:02:54.236" level="INFO">Typing text 'fakhranwahyuf@gmail.com' into text field '//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20221013 21:02:54.236" endtime="20221013 21:02:54.282"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fieldOrder}</arg>
+<arg>text=12345</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221013 21:02:54.282" level="INFO">Typing text '12345' into text field '//*[@id="id_order"]'.</msg>
+<status status="PASS" starttime="20221013 21:02:54.282" endtime="20221013 21:02:54.332"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fieldMessage}</arg>
+<arg>text=test message</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221013 21:02:54.333" level="INFO">Typing text 'test message' into text field '//*[@id="message"]'.</msg>
+<status status="PASS" starttime="20221013 21:02:54.333" endtime="20221013 21:02:54.376"/>
+</kw>
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>${chooseFile}</arg>
+<arg>C:/Users/fakhran/Downloads/Fb-w8zhXkAEhg_Q.png</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20221013 21:02:54.376" level="INFO">Sending C:\Users\fakhran\Downloads\Fb-w8zhXkAEhg_Q.png to browser.</msg>
+<status status="PASS" starttime="20221013 21:02:54.376" endtime="20221013 21:02:54.399"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${buttonSubmit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221013 21:02:54.399" level="INFO">Clicking element '//*[@id="submitMessage"]'.</msg>
+<status status="PASS" starttime="20221013 21:02:54.399" endtime="20221013 21:03:09.212"/>
+</kw>
+<status status="PASS" starttime="20221013 21:02:54.172" endtime="20221013 21:03:09.212"/>
+</kw>
+<status status="PASS" starttime="20221013 21:02:54.172" endtime="20221013 21:03:09.212"/>
+</test>
+<status status="PASS" starttime="20221013 21:02:19.884" endtime="20221013 21:03:09.213"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="6.contactUsFill">6.contactUsFill</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

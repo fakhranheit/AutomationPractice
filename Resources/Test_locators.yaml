@@ -1,0 +1,56 @@
+#Homepage
+bannerDiscount: //*[@id="header"]/div[1]/div/div/a/img
+ContactUs: //*[@id="contact-link"]/a
+searchInput: //*[@id="search_query_top"]
+cartUser: //*[@id="header"]/div[3]/div/div/div[3]/div/a
+footerHomepage: //*[@id="page"]/div[3]
+contactUs: //*[@id="contact-link"]/a
+
+
+
+# Form Registrasi
+SignInButton: //a[@class="login"]
+formEmailRegis: //input[@id="email_create"]
+createAccount: //i[@class="icon-user left"]
+manGender: //*[@for="id_gender1"]
+womanGender: //*[@for="id_gender2"]
+fieldFirstName: //input[@onkeyup="$('#firstname').val(this.value);"]
+fieldLastName : //input[@onkeyup="$('#lastname').val(this.value);"]
+fieldPassword : //input[@type="password"]
+daysDropdown : //*[@id="days"]
+date: //*[@id="days"]/option[2]
+monthsDropdown: //*[@id="months"]
+months: //*[@id="months"]/option[2]
+yearDropdown: //*[@id="years"]
+years: //*[@id="years"]/option[29]
+newsletter: //*[@id="newsletter"]
+specialOffer: //*[@id="optin"]
+fieldCompany: //*[@id="company"]
+fieldAddress1: //*[@id="address1"]
+fieldAddress2: //*[@id="address2"]
+fieldCity: //*[@id="city"]
+zipcode: //*[@id="postcode"]
+dropdownState: //*[@id="id_state"]
+state: //*[@id="id_state"]/option[8]
+additionalInfo: //*[@id="other"]
+homePhone: //*[@id="phone"]
+mobilePhone: //*[@id="phone_mobile"]
+buttonRegister: //*[@id="submitAccount"]/span
+
+
+
+#Form Login
+fieldEmailLogin: //*[@id="email"]
+fieldPasswordLogin: //*[@id="passwd"]
+buttonLogin: //*[@id="SubmitLogin"]/span
+buttonSignOut: //*[@id="header"]/div[2]/div/div/nav/div[2]/a
+
+
+
+# Contact Us
+subjectHeading: //*[@id="id_contact"]
+fieldEmailContact: //*[@id="email"]
+fieldOrder: //*[@id="id_order"]
+fieldMessage: //*[@id="message"]
+chooseFile: //*[@id="fileUpload"]
+buttonSubmit: //*[@id="submitMessage"]
